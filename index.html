@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Banking</title>
+    <!-- Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Mobile Banking</h1>
+
+<body class="bg-[#f4f5f7] h-[100vh] flex justify-center items-center flex-col" >
+    <div class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+    </div>
+    <form class="p-8 bg-white rounded-2xl w-[350px]">
+        <div >
+            <label class="mb-3 font-semibold" for="">Mobile Number</label>
+            <br>
+            <input id="mobile-number" type="text" placeholder="Enter Mobile Number" class="input mt-2 rounded-xl bg-[#f4f5f7]" />
+        </div>
+        <div class="mt-5">
+            <label class="font-semibold" for="">4 Digit PIN</label>
+            <br>
+            <input id="pin-number" type="text" placeholder="Enter 4 Digit PIN" class="input mt-2 rounded-xl bg-[#f4f5f7]" />
+        </div>
+        <button id="login-button" class="btn bg-[#0874F2] mt-4 w-full rounded-xl font-bold text-white">Login</button>
+    </form>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
